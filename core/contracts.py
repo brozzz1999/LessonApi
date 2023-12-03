@@ -10,3 +10,8 @@ USER_DATA_SCHEMA = {
     },
     "required": ["id", "email", "first_name", "last_name", "avatar"]
 }
+
+SINGLE_USER_SUPPORT = {
+    "url": "string",
+    "text": "string"
+}

@@ -15,8 +15,8 @@ def test_user_delete():
 @allure.title('Создаем пользователя методом POST')
 def test_create_user():
 
-    with allure.step('Передаем имя, должность в теле запроса POST')
-    body = {"name": "morpheus","job": "leader"}
+    with allure.step('Передаем имя, должность в теле запроса POST'):
+        body = {"name": "Vasiliy","job": "tester"}
+        response = httpx.post(BASE_URL, json=body)
 
-    response = httpx.post(BASE_URL, json=body)
     print(response.json())

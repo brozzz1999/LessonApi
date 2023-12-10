@@ -19,7 +19,7 @@ def test_list_resouce():
         with allure.step('Сверяем ответ с контрактом'):
             validate(item, RESOURCE_DATA_SHEMA)
 
-@allure.suite('Проверка запросов с данными ресурсов')
+
 @allure.title('Метод проверяющий один ресурс')
 def single_resource():
     with allure.step('Выполняем GET запрос'):

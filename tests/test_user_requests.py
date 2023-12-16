@@ -26,11 +26,11 @@ def test_list_users():
 
 
 @allure.title('Метод проверяющий одного пользователя')
-def test_single_usser():
+def test_single_user():
     with allure.step('Выполняем GET запрос'):
         response_user = httpx.get(BASE_URL + '/2')
 
-    with allure.step('Проверяем ккод ответа'):
+    with allure.step('Проверяем код ответа'):
         assert response_user.status_code == 200
 
     user_data = response_user.json()['data']

@@ -32,3 +32,11 @@ SINGLE_RESOURCE_SUPPORT_SHEMA = {
     "url": "string",
     "text": "string"
 }
+
+SUCCESSFUL_LOGIN_SHEMA = {
+    "type": "object",
+    "properties": {
+        "token": {"type": "string"},
+    },
+    "required": ["token"]
+}
